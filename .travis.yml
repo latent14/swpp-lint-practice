@@ -7,7 +7,7 @@ matrix:
       before_install:
         - cd frontend
       install:
-        - yarn_install
+        - yarn install
       script:
         - ./node_modules/.bin/eslint src/
         - yarn test --coverage --watchAll=false
