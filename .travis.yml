@@ -18,7 +18,7 @@ matrix:
       before_install:
         - cd backend
       install:
-        - pip install - requirements.txt
+        - pip install -r requirements.txt
       script:
         - pylint **/*.py --load-plugins pylint-django
         - coverage run --source='.' manage.py test
